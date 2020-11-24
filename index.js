@@ -9,7 +9,10 @@ function newValue() {
 }
 
 // adds the class ".pressed" to the buttons if they where saved with the class
-var days = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
+var days = ["MON1", "TUE1", "WED1", "THU1", "FRI1", "SAT1", "SUN1",
+            "MON2", "TUE2", "WED2", "THU2", "FRI2", "SAT2", "SUN2",
+            "MON3", "TUE3", "WED3", "THU3", "FRI3", "SAT3", "SUN3",
+            "MON4", "TUE4", "WED4", "THU4", "FRI4", "SAT4", "SUN4"];
 
 for (var i = 0; i < days.length; i++) {
   var day = localStorage.getItem(days[i]);
@@ -24,15 +27,15 @@ for (var i = 0; i < document.querySelectorAll(".btn").length; i++) {
 
   document.querySelectorAll(".btn")[i].addEventListener("click", function() {
 
-    var pressedButton = document.querySelector("." + this.innerText);
+    var pressedButton = document.querySelector("." + this.classList[0]);
     pressedButton.classList.toggle("pressed");
 
     // adds/removes the .pressed class from the buttons
-    if (localStorage.getItem(this.innerText) === ".pressed") {
-      localStorage.removeItem(this.innerText);
+    if (localStorage.getItem(this.classList[0]) === ".pressed") {
+      localStorage.removeItem(this.classList[0]);
     }
     else {
-      localStorage.setItem(this.innerText, ".pressed");
+      localStorage.setItem(this.classList[0], ".pressed");
     }
   });
 }
