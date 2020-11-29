@@ -62,6 +62,10 @@ hr {
   border-radius: 0;
 }
 
+.weekend {
+  background-color: #353a41;
+}
+
 .pressed {
   background-color: #00adb5;
 }
