@@ -9,7 +9,7 @@ body {
 input {
   color: #eeeeee;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 1.7rem;
   text-align: center;
   border: 1px solid #919191;
   background-color: #2e3239;
@@ -17,12 +17,13 @@ input {
   height: 40px;
   width: 659px;
   border-radius: 10px 10px 0 0;
+  padding-bottom: 0.2rem;
 }
 
 span {
   color: #eeeeee;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.9rem;
   display: block;
   position: absolute;
   top: 2px;
