@@ -16,9 +16,9 @@ var days = ["MON1", "TUE1", "WED1", "THU1", "FRI1", "SAT1", "SUN1",
 
 for (var i = 0; i < days.length; i++) {
   var day = localStorage.getItem(days[i]);
-  if (day === ".pressed") {
+  if (day === ".pressed1") {
   var pressedButton = document.querySelector("." + days[i]);
-  pressedButton.classList.add("pressed");
+  pressedButton.classList.add("pressed1");
   }
   else if (day === ".pressed2"){
     var pressedButton = document.querySelector("." + days[i]);
@@ -32,9 +32,9 @@ for (var i = 0; i < document.querySelectorAll(".btn").length; i++) {
   document.querySelectorAll(".btn")[i].addEventListener("click", function() {
     var pressedButton = document.querySelector("." + this.classList[0]);
 
-    if (pressedButton.classList.contains("pressed")) {
+    if (pressedButton.classList.contains("pressed1")) {
     pressedButton.classList.toggle("pressed2");
-    pressedButton.classList.toggle("pressed");
+    pressedButton.classList.toggle("pressed1");
     }
 
     else if (pressedButton.classList.contains("pressed2")) {
@@ -42,11 +42,11 @@ for (var i = 0; i < document.querySelectorAll(".btn").length; i++) {
     }
 
     else {
-    pressedButton.classList.toggle("pressed");
+    pressedButton.classList.toggle("pressed1");
     }
 
     // adds/removes the .pressed class from the buttons
-    if (localStorage.getItem(pressedButton.classList[0]) === ".pressed") {
+    if (localStorage.getItem(pressedButton.classList[0]) === ".pressed1") {
       localStorage.removeItem(pressedButton.classList[0]);
       localStorage.setItem(pressedButton.classList[0], ".pressed2");
     }
@@ -54,7 +54,7 @@ for (var i = 0; i < document.querySelectorAll(".btn").length; i++) {
       localStorage.removeItem(pressedButton.classList[0]);
     }
     else {
-      localStorage.setItem(pressedButton.classList[0], ".pressed");
+      localStorage.setItem(pressedButton.classList[0], ".pressed1");
     }
   });
 }
