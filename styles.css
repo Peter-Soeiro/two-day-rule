@@ -71,6 +71,10 @@ hr {
   background-color: #00adb5;
 }
 
+.pressed2 {
+  background-color: #fc5185;
+}
+
 .lc {
   border-radius: 0 0 0 10px;
 }
