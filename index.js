@@ -1,6 +1,6 @@
 
 // sets the input value to the value stored in the key "Name"
-document.querySelector(".challenge").value = localStorage.getItem("Name");
+document.querySelector(".habit").value = localStorage.getItem("Name");
 
 // changes the value of the key "Name" to the current input if the button is pressed
 function newValue() {
