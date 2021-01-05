@@ -4,8 +4,8 @@ document.querySelector(".habit").value = localStorage.getItem("Name");
 
 // changes the value of the key "Name" to the current input if the button is pressed
 function newValue() {
-  var challenge = document.querySelector(".challenge").value;
-  localStorage.setItem("Name", challenge);
+  var habit = document.querySelector(".habit").value;
+  localStorage.setItem("Name", habit);
 }
 
 // adds the class ".pressed" to the buttons if they where saved with the class
