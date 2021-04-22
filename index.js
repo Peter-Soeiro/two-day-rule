@@ -1,11 +1,11 @@
 
-// sets the input value to the value stored in the key "Title"
-document.querySelector(".habit").value = localStorage.getItem("Title");
+// sets the input value to the value stored in the key "Name"
+document.querySelector(".habit").value = localStorage.getItem("Name");
 
-// changes the value of the key "Title" to the current input if the button is pressed
+// changes the value of the key "Name" to the current input if the button is pressed
 function newValue() {
   var habit = document.querySelector(".habit").value;
-  localStorage.setItem("Title", habit);
+  localStorage.setItem("Name", habit);
 }
 
 // adds the class ".pressed" to the buttons if they where saved with the class

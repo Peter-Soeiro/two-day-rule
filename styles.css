@@ -9,6 +9,14 @@ body {
   margin: 0;
 }
 
+main {
+  max-width: 100%;
+  margin: 0 auto 50px;
+  align-items: center;
+  width: 665px;
+  font-size: 0;
+}
+
 input {
   color: #eeeeee;
   font-weight: 500;
@@ -47,14 +55,6 @@ hr {
   border: none;
   background-color: transparent;
   margin: 50px auto;
-}
-
-.parent {
-  max-width: 100%;
-  margin: 0 auto 50px;
-  align-items: center;
-  width: 665px;
-  font-size: 0;
 }
 
 .btn {
