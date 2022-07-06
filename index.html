@@ -1,54 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Two Day Rule</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="favicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <button class="setChallenge" onclick="newValue()">Two Day Rule</button>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="icon" href="favicon.ico" />
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet" />
+      <title>Two Day Rule</title>
+   </head>
+   <body>
+      <div class="hero">
+         <button class="setChallenge" onclick="newValue()">Two Day Rule</button>
 
-    <main>
-      <abbr title="Press 'Two Day Rule' to save a new title"><input class="habit" type="text" value="" /></abbr>
-      <button class="MON1 btn" type="button" name="button"><span>MON</span></button>
-      <button class="TUE1 btn" type="button" name="button"><span>TUE</span></button>
-      <button class="WED1 btn weekend" type="button" name="button"><span>WED</span></button>
-      <button class="THU1 btn" type="button" name="button"><span>THU</span></button>
-      <button class="FRI1 btn" type="button" name="button"><span>FRI</span></button>
-      <button class="SAT1 btn" type="button" name="button"><span>SAT</span></button>
-      <button class="SUN1 btn weekend" type="button" name="button"><span>SUN</span></button>
+         <main>
+            <div class="container">
+               <abbr title="Press 'Two Day Rule' to save a new title"><input class="habit" type="text" value="" /></abbr>
+               <div class="week1">
+                  <button class="MON1 btn" type="button" name="button"><span>MON</span></button>
+                  <button class="TUE1 btn" type="button" name="button"><span>TUE</span></button>
+                  <button class="WED1 btn weekend" type="button" name="button"><span>WED</span></button>
+                  <button class="THU1 btn" type="button" name="button"><span>THU</span></button>
+                  <button class="FRI1 btn" type="button" name="button"><span>FRI</span></button>
+                  <button class="SAT1 btn" type="button" name="button"><span>SAT</span></button>
+                  <button class="SUN1 btn weekend" type="button" name="button"><span>SUN</span></button>
+               </div>
+               <div class="week2">
+                  <button class="MON2 btn" type="button" name="button"><span>MON</span></button>
+                  <button class="TUE2 btn" type="button" name="button"><span>TUE</span></button>
+                  <button class="WED2 btn weekend" type="button" name="button"><span>WED</span></button>
+                  <button class="THU2 btn" type="button" name="button"><span>THU</span></button>
+                  <button class="FRI2 btn" type="button" name="button"><span>FRI</span></button>
+                  <button class="SAT2 btn" type="button" name="button"><span>SAT</span></button>
+                  <button class="SUN2 btn weekend" type="button" name="button"><span>SUN</span></button>
+               </div>
+               <div class="week3">
+                  <button class="MON3 btn" type="button" name="button"><span>MON</span></button>
+                  <button class="TUE3 btn" type="button" name="button"><span>TUE</span></button>
+                  <button class="WED3 btn weekend" type="button" name="button"><span>WED</span></button>
+                  <button class="THU3 btn" type="button" name="button"><span>THU</span></button>
+                  <button class="FRI3 btn" type="button" name="button"><span>FRI</span></button>
+                  <button class="SAT3 btn" type="button" name="button"><span>SAT</span></button>
+                  <button class="SUN3 btn weekend" type="button" name="button"><span>SUN</span></button>
+               </div>
+               <div class="week4">
+                  <button class="MON4 btn lc" type="button" name="button"><span>MON</span></button>
+                  <button class="TUE4 btn" type="button" name="button"><span>TUE</span></button>
+                  <button class="WED4 btn weekend" type="button" name="button"><span>WED</span></button>
+                  <button class="THU4 btn" type="button" name="button"><span>THU</span></button>
+                  <button class="FRI4 btn" type="button" name="button"><span>FRI</span></button>
+                  <button class="SAT4 btn" type="button" name="button"><span>SAT</span></button>
+                  <button class="SUN4 btn weekend rc" type="button" name="button"><span>SUN</span></button>
+               </div>
+            </div>
+         </main>
 
-      <button class="MON2 btn" type="button" name="button"><span>MON</span></button>
-      <button class="TUE2 btn" type="button" name="button"><span>TUE</span></button>
-      <button class="WED2 btn weekend" type="button" name="button"><span>WED</span></button>
-      <button class="THU2 btn" type="button" name="button"><span>THU</span></button>
-      <button class="FRI2 btn" type="button" name="button"><span>FRI</span></button>
-      <button class="SAT2 btn" type="button" name="button"><span>SAT</span></button>
-      <button class="SUN2 btn weekend" type="button" name="button"><span>SUN</span></button>
+         <footer>
+            <p class="copyright">© Ricardo Soeiro</p>
+         </footer>
+      </div>
 
-      <button class="MON3 btn" type="button" name="button"><span>MON</span></button>
-      <button class="TUE3 btn" type="button" name="button"><span>TUE</span></button>
-      <button class="WED3 btn weekend" type="button" name="button"><span>WED</span></button>
-      <button class="THU3 btn" type="button" name="button"><span>THU</span></button>
-      <button class="FRI3 btn" type="button" name="button"><span>FRI</span></button>
-      <button class="SAT3 btn" type="button" name="button"><span>SAT</span></button>
-      <button class="SUN3 btn weekend" type="button" name="button"><span>SUN</span></button>
-
-      <button class="MON4 btn lc" type="button" name="button"><span>MON</span></button>
-      <button class="TUE4 btn" type="button" name="button"><span>TUE</span></button>
-      <button class="WED4 btn weekend" type="button" name="button"><span>WED</span></button>
-      <button class="THU4 btn" type="button" name="button"><span>THU</span></button>
-      <button class="FRI4 btn" type="button" name="button"><span>FRI</span></button>
-      <button class="SAT4 btn" type="button" name="button"><span>SAT</span></button>
-      <button class="SUN4 btn weekend rc" type="button" name="button"><span>SUN</span></button>
-    </main>
-
-    <footer>
-      <p class="copyright">© Ricardo Soeiro</p>
-    </footer>
-
-    <script src="index.js" charset="utf-8"></script>
-  </body>
+      <script src="app.js" charset="utf-8"></script>
+   </body>
 </html>
