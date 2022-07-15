@@ -11,6 +11,7 @@ body {
 
 .hero {
    min-width: 45rem;
+   height: 100vh;
 }
 
 main {
